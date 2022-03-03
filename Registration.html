@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registration</title>
+</head>
+<body>
+			<form action="RegistrationAction.php" method="post" novalidate>
+
+		<fieldset>
+			
+		<legend>Personal Information:</legend>
+	
+		<br><br>
+
+		<label for="fname">First Name:</label>
+		<input type="text" name="firstname" id="fname" required>
+	
+
+		<br><br>
+	
+		<label for="lname">Last Name:</label>
+		<input type="text" name="lastname" id="lname" required>
+
+		<br><br>
+
+		<label for="gender">Select Gender:</label>
+		
+		<input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+		<input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+
+		<br><br>
+
+		<label for="DOB"> Date of birth :</label>
+		<input type="date" name="DOB" id="DOB" required>
+
+		<br><br>
+
+		<label for="religion">Select religion:</label>
+
+		<input type="checkbox" name="religion" id="religion" value="Islam"> <label for= "religion">Islam</label>
+		<input type="checkbox" name="religion" id="religion" value="Hindu"> <label for= "religion"> Hindu</label>
+		<input type="checkbox" name="religion" id="religion" value="Christian"><label for= "religion"> Christian</label>
+		<input type="checkbox" name="religion" id="religion" value="Buddha"><label for="religion">Buddha</label>
+		<input type="checkbox" name="religion" id="religion" value="Other"><label for="religion">Other</label>
+	
+			<br><br>
+	
+			
+
+		</fieldset>
+
+        <fieldset>
+	
+			<legend>Contact Information</legend>
+			
+			<br><br>
+			
+			<label for="presaddress"> Present Address :</label>
+			<textarea name="presaddress" id="presaddress" rows="4" cols="50"></textarea required>
+			
+			<br><br>
+
+			<label for="permaddress"> Permanant Address :</label>
+			<textarea name="permaddress" id="permaddress" rows="4" cols="50"></textarea required>
+			
+			<br><br>
+			
+			<label for="phone" > Phone :</label>
+			<input type="tel" name="phone" id="phone">
+			
+			<br><br>
+			
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email">
+			
+			<br><br>
+			
+			<label for="Website">Personal web:</label>
+            <input type="url" id="web" name="web">
+           
+
+					
+					</fieldset>
+
+
+			<fieldset>
+	
+			<legend>Credentials :</legend>
+
+			<label for="username"> Username :</label>
+            <input type="text" name="username" id="username" maxlength="5" required>
+
+
+			<br><br>
+
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" required>
+
+			<br><br>
+
+			<label for="confirmpass"> Confirm Password :</label>
+			<input type="password" name="confirmpass" id="confirmpass" required>
+
+			</fieldset> 
+
+			
+			<br><br>
+
+
+			<input type="submit" name="submit" value="Submit" >
+			
+		
+
+
+
+
+
+
+	</form>
+
+
+
+
+
+</body>
+</html>
